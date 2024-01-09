@@ -1,3 +1,4 @@
+import { Database } from './path/to/Database';
 // Interfaces en clases
 // Las interfaces en clases funcionan como contratos, nos permiten tipar tanto los atributos como los métodos.
 // Las interfaces en clases también pueden ser implementadas por otras clases.
@@ -46,3 +47,7 @@ class OracleDriver implements Driver{
     return true;
   }
 }
+const db = new Database();
+const oracle = new OracleDriver('Oracle', '1234', 5432);
+db.addDriver(oracle);
+db.connect('Oracle');
