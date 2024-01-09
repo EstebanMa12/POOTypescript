@@ -32,6 +32,10 @@ export class myDate{
   return value.toString();
   }
 
+  getDay(){
+    return this.day;
+  }
+
 
 }
 const date = new myDate(23,9,2021);
