@@ -1,3 +1,5 @@
+// You can use generics in functions to infer types based on what you call your function with.
+
 function getValue<myType>(value: myType){
     return value;
 }
