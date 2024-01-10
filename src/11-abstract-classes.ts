@@ -3,14 +3,6 @@
 //they are only meant to be extended
 //they can contain implementation details
 
-import { Animal, Dog } from "./08-protected";
-
-const animal = new Animal('Bernardo');
-animal.eat();
-
-const myDog = new Dog("Buddy", "Labrador");
-myDog.eat(); // Output: Buddy is eating.
-
 // Abstract base class for shapes
 abstract class Shape {
   // Protected color property
